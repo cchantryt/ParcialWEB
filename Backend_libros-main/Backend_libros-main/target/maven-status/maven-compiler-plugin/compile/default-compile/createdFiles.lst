@@ -1,0 +1,4 @@
+com\cobiscorp\postulacion\libros\repositories\BookRepository.class
+com\cobiscorp\postulacion\libros\LibrosApplication.class
+com\cobiscorp\postulacion\libros\models\BookModel.class
+com\cobiscorp\postulacion\libros\repositories\DataBaseInit.class

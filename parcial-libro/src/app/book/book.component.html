@@ -1,0 +1,22 @@
+<h2>Listado de Libros</h2>
+
+<ul>
+  <li *ngFor="let book of books">
+    <strong>Nombre:</strong> {{ book.nombre }} | <strong>Autor:</strong> {{ book.autor }} | <strong>Biblioteca:</strong> {{ book.biblioteca }}
+  </li>
+</ul>
+
+<h2>Ingreso de Nuevo Libro</h2>
+
+<form (submit)="agregarLibro()">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" [(ngModel)]="nuevoLibro.nombre" required>
+
+  <label for="autor">Autor:</label>
+  <input type="text" id="autor" [(ngModel)]="nuevoLibro.autor" required>
+
+  <label for="biblioteca">Biblioteca:</label>
+  <input type="text" id="biblioteca" [(ngModel)]="nuevoLibro.biblioteca" required>
+
+  <button type="submit">Agregar Libro</button>
+</form>
