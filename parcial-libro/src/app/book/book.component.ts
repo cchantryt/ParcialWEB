@@ -31,8 +31,8 @@ export class BookComponent implements OnInit {
     this.bookService.agregarLibro(this.nuevoLibro).subscribe(
       (res: any) => {
         console.log('Libro agregado:', res);
-        this.listarLibros(); // Actualizar lista después de agregar
-        this.nuevoLibro = { nombre: '', autor: '', biblioteca: '' }; // Reiniciar el objeto para un nuevo ingreso
+        this.listarLibros();
+        this.nuevoLibro = { nombre: '', autor: '', biblioteca: '' };
       },
       (error: any) => {
         console.error('Error al agregar libro:', error);
